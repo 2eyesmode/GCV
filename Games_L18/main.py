@@ -14,17 +14,16 @@ def main():
         print("4. Виселица")
         print("5. Текстовый квест")
         print("6. Сапер")
-        print("7. Выход")
+        print("0. Выход")
         choice = input("Выберите игру (1-6): ")
-
         if choice == "1":
-            game_guess_number())
+            game_guess_number()
             print("")
         elif choice == "2":
             game_paper_scissors()
             print("")
         elif choice == "3":
-            quiz_game_mai()
+            quiz_game_main()
             print("")
         elif choice == "4":
             game_hangman()()
@@ -40,6 +39,7 @@ def main():
             break
         else:
             print("Некорректный ввод. Выберите действие от 0 до 6 из меню.")
-
-
+if __name__ == "__main__":
+    print('Файл запущен напрямую')
+    main()
 
